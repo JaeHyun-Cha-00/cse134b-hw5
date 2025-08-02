@@ -23,8 +23,9 @@ html {
             flex: 1;
 
             > .profile_container {
-                overflow-y: auto;
-                max-height: 100dvh;
+                display: flex;
+                flex-direction: column;
+                height: 100vh;
 
                 #my_name {
                     font-size: 2rem;
@@ -127,8 +128,10 @@ html {
         }
 
         .toggle {
+            margin-top: 0; 
             text-align: center;
-          }
+            padding: 1rem 0;
+        }
           
           .toggle button {
             background: none;
