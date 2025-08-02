@@ -177,5 +177,3 @@ async function loadRemoteProjects() {
 
 document.getElementById("load_local").addEventListener("click", loadLocalProjects);
 document.getElementById("load_remote").addEventListener("click", loadRemoteProjects);
-
-loadLocalProjects();
