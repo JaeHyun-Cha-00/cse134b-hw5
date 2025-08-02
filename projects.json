@@ -1,0 +1,23 @@
+[
+    {
+      "title": "Recipe Recommendation System",
+      "description": "A machine learning model suggesting recipes based on ingredients.",
+      "img": "assets/img/recipe_generator.png",
+      "link": "https://github.com/JaeHyun-Cha-00/recipe-bot",
+      "alt": "Recipe project screenshot",
+      "date": "2025-01-15",
+      "author": "JaeHyun Cha",
+      "tags": "ML,Food,AI"
+    },
+    {
+      "title": "Mixture-of-Judges",
+      "description": "Research project on large language model evaluation and alignment.",
+      "img": "assets/img/moj.png",
+      "link": "https://github.com/JaeHyun-Cha-00/moj-project",
+      "alt": "MOJ dataset logo",
+      "date": "2025-04-20",
+      "author": "JaeHyun Cha",
+      "tags": "LLM,Research,AI"
+    }
+]
+  
