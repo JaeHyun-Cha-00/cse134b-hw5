@@ -8,7 +8,7 @@ class ProjectCard extends HTMLElement {
   connectedCallback() {
     const title = this.getAttribute("title") || "Untitled Project";
     const description = this.getAttribute("description") || "No description available.";
-    const imgSrc = this.getAttribute("img") || "assets/img/profile.png";
+    const imgSrc = this.getAttribute("img") || "assets/img/default.png";
     const link = this.getAttribute("link") || "#";
     const alt = this.getAttribute("alt") || "Project image";
     const date = this.getAttribute("date") || "2025-01-01";
@@ -137,8 +137,6 @@ const defaultProjects = [
   }
 ];
 
-// Load Functions
-
 // Render cards
 function renderProjects(projects, container) {
   container.innerHTML = "";
@@ -157,7 +155,7 @@ function loadLocalProjects() {
     renderProjects(JSON.parse(localData), container);
   } else {
     localStorage.setItem("projects", JSON.stringify(defaultProjects));
-    renderProjects(defaultProjects, container);
+    alert("No local projects found. Default projects saved. Click again to load.");
   }
 }
 
