@@ -1,0 +1,15 @@
+:root {
+    /* Font */
+    --fontfamily: 'Inter';
+    --text_color: #afb0b1;
+    
+    /* Background color */
+    --main_background_color: #1a1a1e;
+    --profile_background_color: #1e1e1e;
+
+    /* Container color */
+    --container_color: #2a2a2e;
+
+    /* Transition */
+    --transition-bg: background-color 0.3s ease;
+}

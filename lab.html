@@ -1,0 +1,137 @@
+<!-- Not linked to the WEBSITE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <header>
+
+  </header>
+
+  <main>
+    <!-- picture tag -->
+    <picture>
+      <source srcset="assets/img/profile.webp" type="image/webp">
+      <source srcset="assets/img/profile.png" type="image/png">
+      <img src="assets/img/profile.png" alt="Profile Picture">
+    </picture>     
+
+    <!-- video tag -->
+    <video controls>
+      <source src="assets/video/waterfall.mp4" type="video/mp4">
+    </video>
+    
+    <br>
+    
+    <!-- code tag -->
+    <p>Use the <code>&lt;section&gt;</code> tag to group related content on your webpage.</p>
+
+    <br>
+
+    <!-- canvas tag-->
+    <canvas id="myCanvas" width="200" height="200"></canvas>
+    
+    <script>
+      const canvas = document.getElementById("myCanvas");
+      const ctx = canvas.getContext("2d");
+
+      ctx.fillStyle = "blue";
+      ctx.fillRect(20, 20, 100, 100);
+    </script>
+
+    <br>
+
+    <!-- svg tag -->
+    <p>
+      Blue circle: 
+      <svg width="20" height="20">
+        <circle cx="10" cy="10" r="8" fill="blue" />
+      </svg>
+      svg tags are cool!
+    </p>
+
+    <br>
+
+    <!-- select, optgroup, option tags-->
+    <select>
+      <optgroup label="Korean Food">
+        <option>Kimchi</option>
+        <option>Bibimbap</option>
+      </optgroup>
+      <optgroup label="American Food">
+        <option>Burger</option>
+        <option>Fries</option>
+      </optgroup>
+    </select>
+
+    <br>
+
+    <!-- datalist tag-->
+    <label for="browser">Choose your browser:</label>
+    <input list="browsers" id="browser" name="browser">
+
+    <datalist id="browsers">
+      <option value="Chrome">
+      <option value="Firefox">
+      <option value="Safari">
+      <option value="Edge">
+    </datalist>
+
+    <br>
+
+    <!-- search tag -->
+    <search>
+      <form action="/search">
+        <input type="search" name="query" placeholder="Search my site">
+        <button type="submit">🔍</button>
+      </form>
+    </search>
+
+    <br>
+
+    <!-- dfn, kbd tag -->
+    <p><dfn>Frontend</dfn> means the part of a website users interact with directly.</p>
+    <p>To submit the form, press <kbd>Enter</kbd>.</p>
+
+    <br>
+
+    <!-- dialog tag -->
+    <dialog open>
+      <p>Submit the comment?</p>
+      <button>OK</button>
+    </dialog>
+
+    <br>
+
+    <!-- Extra Credit -->
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <mrow>
+        <mi>E</mi>
+        <mo>=</mo>
+        <mi>m</mi>
+        <msup>
+          <mi>c</mi>
+          <mn>2</mn>
+        </msup>
+      </mrow>
+    </math>
+  
+  </main>
+
+  <footer>
+      <p> &copy; 2025 <i><b>Jae Hyun Cha</b></i></p>
+      
+      <address>
+          e-mail: j4cha@ucsd.edu<br>
+      </address>
+        
+      <noscript>
+          JavaScript is disabled in your browser. Enable JavaScript to use features of this site.
+      </noscript>
+  </footer>
+  
+</body>
+</html>
