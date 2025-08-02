@@ -42,6 +42,13 @@ form {
         resize: vertical;
     }
 
+    input:-webkit-autofill,
+    textarea:-webkit-autofill {
+        box-shadow: 0 0 0px 1000px var(--main_background_color, #1a1a1e) inset !important;
+        -webkit-text-fill-color: var(--text_color, white) !important;
+    }
+
+
     button {
         margin-top: 0.5rem;
         padding: 0.7rem 2rem;
